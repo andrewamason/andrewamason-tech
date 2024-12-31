@@ -35,9 +35,9 @@ rtl = false
 # "auto" (use preference set by browser)
 # "dark" (dark background, light foreground)
 # "light" (light background, dark foreground) (default)
-colorScheme = "auto"
+colorScheme = "light"
 # Hide the toggle button, along with the associated vertical divider
-hideColorSchemeToggle = false
+hideColorSchemeToggle = true
 # Series see also post count
 maxSeeAlsoItems = 5
 # Custom CSS
@@ -144,6 +144,12 @@ url = "https://github.com/andrewamason/"
 
 [[params.social]]
 name = "Twitter"
+icon = "fa-brands fa-facebook fa-2x"
+weight = 3
+url = "https://facebook.com/andrewamason/"
+
+[[params.social]]
+name = "Twitter"
 icon = "fa-brands fa-x-twitter fa-2x"
 weight = 3
 url = "https://twitter.com/andrewamason/"
@@ -175,17 +181,17 @@ name = "Blog"
 weight = 2
 url = "posts/"
 
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+#[[languages.en.menu.main]]
+#name = "Projects"
+#weight = 3
+#url = "projects/"
 
 [[languages.en.menu.main]]
 name = "Experience"
-weight = 4
-url = "experience/"
+weight = 3
+url = "https://resume.andrewamason.tech"
 
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
+#[[languages.en.menu.main]]
+#name = "Contact me"
+#weight = 5
+#url = "contact/"

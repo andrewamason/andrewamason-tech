@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  My HomeLab · andrewamason
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Andrew Amason">
+<meta name="description" content="A Guide to my HomeLab environment and the apps that I use every day.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My HomeLab">
+  <meta name="twitter:description" content="A Guide to my HomeLab environment and the apps that I use every day.">
+
+<meta property="og:url" content="http://localhost:1313/posts/homelab-fun/">
+  <meta property="og:site_name" content="andrewamason">
+  <meta property="og:title" content="My HomeLab">
+  <meta property="og:description" content="A Guide to my HomeLab environment and the apps that I use every day.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-31T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-31T00:00:00+00:00">
+    <meta property="article:tag" content="Homelab">
+    <meta property="article:tag" content="SelfHosting">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/homelab-fun/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      andrewamason
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="https://resume.andrewamason.tech">Experience</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/homelab-fun/">
+              My HomeLab
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-12-31T00:00:00Z">
+                December 31, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/andrew-amason/">Andrew Amason</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/homelab/">HomeLab</a>
+      <span class="separator">•</span>
+    <a href="/categories/selfhosting/">SelfHosting</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/homelab/">Homelab</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/selfhosting/">SelfHosting</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="my-homelab">
+  My HomeLab
+  <a class="heading-link" href="#my-homelab">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h2 id="servers--hardware">
+  Servers &amp; Hardware
+  <a class="heading-link" href="#servers--hardware">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Synology <a href="https://global.download.synology.com/download/Document/Hardware/DataSheet/DiskStation/18-year/DS918&#43;/enu/Synology_DS918_Plus_Data_Sheet_enu.pdf"  class="external-link" target="_blank" rel="noopener">DS918+</a> &amp; <a href="https://www.synology.com/en-us/products/DX517#features"  class="external-link" target="_blank" rel="noopener">DS517</a> Expansion Bay
+<ul>
+<li>Name: <strong>Grimlock</strong></li>
+<li>CPU: <strong>INTEL Celeron J3455</strong></li>
+<li>RAM: <strong>16 GB</strong></li>
+<li>Total Storage: <strong>24.9 TB</strong></li>
+</ul>
+</li>
+<li>QNAP <a href="https://www.qnap.com/en-us/product/tvs-463"  class="external-link" target="_blank" rel="noopener">TVS-463</a>
+<ul>
+<li>Name: <strong>Snarl</strong></li>
+<li>CPU: <strong>AMD GX-424CC with Radeon R5E</strong></li>
+<li>RAM: <strong>8 GB</strong></li>
+<li>Total Storage: <strong>6.27 TB</strong></li>
+</ul>
+</li>
+<li>HP ProDesk 600 G3 Mini - OS: VMware ESX 7
+<ul>
+<li>Name: <strong>Nova</strong></li>
+<li>CPU: <strong>Intel(R) Core(TM) i5-7500T</strong></li>
+<li>RAM: <strong>16 GB</strong></li>
+<li>VMs:
+<ul>
+<li><strong>BlueStreak</strong>
+<ul>
+<li>OS: Rocky Linux 9.5</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dell Optiplex 9020
+<ul>
+<li>OS: Rocky Linux 9.5</li>
+<li>Name: <strong>Trailbreaker</strong></li>
+<li>CPU: <strong>Intel(R) Core(TM) i5-4570</strong></li>
+<li>RAM: <strong>24 GB</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="infrastructure-containers">
+  Infrastructure Containers
+  <a class="heading-link" href="#infrastructure-containers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://technitium.com/dns/"  class="external-link" target="_blank" rel="noopener">Technitium</a>: Serves internal Split scope DNS, 2x of these containers using a single git repo with 2 different .env files</li>
+<li><a href="https://docs.linuxserver.io/general/swag/"  class="external-link" target="_blank" rel="noopener">SWAG</a>: Internal Reverse Proxy</li>
+<li><a href="https://traefik.io/traefik/"  class="external-link" target="_blank" rel="noopener">Traefik</a>: external reverse proxy</li>
+<li><a href="https://hub.docker.com/r/oznu/cloudflare-ddns/"  class="external-link" target="_blank" rel="noopener">Cloudflare-DDNS</a>: DDNS Updating Container</li>
+<li><a href="https://github.com/FlareSolverr/FlareSolverr"  class="external-link" target="_blank" rel="noopener">flaresolverr</a>: solves cloudflare prompts</li>
+<li><a href="https://komo.do/"  class="external-link" target="_blank" rel="noopener">Komodo</a>: Docker Stack Management, all stacks are git repos on gitea that deploy on gitea webhooks</li>
+<li><a href="https://about.gitea.com/"  class="external-link" target="_blank" rel="noopener">Gitea</a>: OpenSource lightweight git hosting</li>
+</ul>
+<h2 id="apps">
+  Apps
+  <a class="heading-link" href="#apps">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="watching-reading--listening">
+  Watching, Reading, &amp; Listening
+  <a class="heading-link" href="#watching-reading--listening">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.plex.tv/"  class="external-link" target="_blank" rel="noopener">Plex</a>: Video Streaming</li>
+<li><a href="https://www.audiobookshelf.org/"  class="external-link" target="_blank" rel="noopener">Audiobookshelf</a>: Podcasts &amp; Audiobooks</li>
+<li><a href="https://freshrss.org/"  class="external-link" target="_blank" rel="noopener">FreshRSS</a>: RSS Aggregation</li>
+<li><a href="https://hoarder.app/"  class="external-link" target="_blank" rel="noopener">Hoarder</a>: Bookmarks &amp; Links Storing</li>
+<li><a href="https://github.com/glanceapp/glance"  class="external-link" target="_blank" rel="noopener">Glance</a>: News Dashboard</li>
+</ul>
+<h3 id="dashboards--monitoring">
+  Dashboards &amp; Monitoring
+  <a class="heading-link" href="#dashboards--monitoring">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://homarr.dev/"  class="external-link" target="_blank" rel="noopener">Homarr</a>: Internal Dashboard in competition with Heimdall will eventually consolidate to one or the other</li>
+<li><a href="https://heimdall.site/"  class="external-link" target="_blank" rel="noopener">Heimdall</a>: IInternal Dashboard in competition with Homarr will eventually consolidate to one or the other</li>
+<li><a href="https://tautulli.com/"  class="external-link" target="_blank" rel="noopener">Tautulli</a>: Plex Monitoring</li>
+</ul>
+<h3 id="tech-support">
+  Tech Support
+  <a class="heading-link" href="#tech-support">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://kasmweb.com/"  class="external-link" target="_blank" rel="noopener">KASM Workspace</a>: Ephemeral Workspaces &amp; Investigations</li>
+<li><a href="https://rustdesk.com/"  class="external-link" target="_blank" rel="noopener">RustDesk</a>: Desktop Remote Support</li>
+</ul>
+<h3 id="smarthome">
+  SmartHome
+  <a class="heading-link" href="#smarthome">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.home-assistant.io/"  class="external-link" target="_blank" rel="noopener">HomeAssistant</a>: Smart Home Hub</li>
+</ul>
+<h3 id="media-download--management-apps">
+  Media Download &amp; Management Apps
+  <a class="heading-link" href="#media-download--management-apps">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://prowlarr.com/"  class="external-link" target="_blank" rel="noopener">Prowlarr</a>: Centralized Index management</li>
+<li><a href="https://overseerr.dev/"  class="external-link" target="_blank" rel="noopener">Overseerr</a>: Nice front end for Sonarr/Radarr</li>
+<li><a href="https://sonarr.tv/"  class="external-link" target="_blank" rel="noopener">Sonarr</a>: TV Show Collection Manager</li>
+<li><a href="https://radarr.video/"  class="external-link" target="_blank" rel="noopener">Radarr</a>: Movie Collection Manager</li>
+<li><a href="https://readarr.com/"  class="external-link" target="_blank" rel="noopener">Readarr</a>: ebook Collection Manager</li>
+<li><a href="https://www.qbittorrent.org/"  class="external-link" target="_blank" rel="noopener">qBitTorrent</a>: For downloading &amp; seeding Linux Distros (obviously)</li>
+<li><a href="https://github.com/alexta69/metube"  class="external-link" target="_blank" rel="noopener">Metube</a>: Youtube Video downloader (good for single video downloads or one off playlist downloads probably going to retire)</li>
+<li><a href="https://github.com/kieraneglin/pinchflat"  class="external-link" target="_blank" rel="noopener">Pinchflat</a>: Youtube download tracker (alot more full featured than MeTube)</li>
+<li><a href="https://home.tdarr.io/"  class="external-link" target="_blank" rel="noopener">Tdarr</a>: Distributed Media Transcoding, tracks library and follows designated &ldquo;flows&rdquo;</li>
+<li><a href="https://immich.app"  class="external-link" target="_blank" rel="noopener">Immich</a>: Photo Management App &ldquo;Selfhosted Google photos&rdquo;
+<ul>
+<li><a href="https://github.com/immichFrame/ImmichFrame"  class="external-link" target="_blank" rel="noopener">Immich Frame</a> Picture Frame App for Immich</li>
+</ul>
+</li>
+</ul>
+<h2 id="apps-in-testing">
+  Apps In Testing
+  <a class="heading-link" href="#apps-in-testing">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://ntfy.sh/"  class="external-link" target="_blank" rel="noopener">ntfy.sh</a> / <a href="https://hub.docker.com/r/caronc/apprise"  class="external-link" target="_blank" rel="noopener">apprise</a> / <a href="https://notifiarr.com/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">notifiarr</a> : selfhosted Notifications Service</li>
+<li><a href="https://romm.app/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Romm</a> - Roms Manager</li>
+</ul>
+<h2 id="apps-to-implementtest-soon">
+  Apps to Implement/Test Soon
+  <a class="heading-link" href="#apps-to-implementtest-soon">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://changedetection.io"  class="external-link" target="_blank" rel="noopener">ChangeDetection.io</a>: Self-Hosted WEBSITE CHANGE DETECTION</li>
+<li><a href="https://www.crowdsec.net/"  class="external-link" target="_blank" rel="noopener">CrowdSec Blocklists</a>: Customized IP Blocklists</li>
+<li><a href="https://wazuh.com/"  class="external-link" target="_blank" rel="noopener">Wazuh XDR</a>: Self-Hosted Unified XDR and SIEM protection for endpoints</li>
+<li><a href="https://goauthentik.io/"  class="external-link" target="_blank" rel="noopener">authentik</a>: IDP</li>
+</ul>
+<p>Great source of additional applications can be found here: <a href="https://selfh.st/"  class="external-link" target="_blank" rel="noopener">https://selfh.st/</a></p>
+<h2 id="apps-retired">
+  Apps Retired
+  <a class="heading-link" href="#apps-retired">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://hub.docker.com/r/tzahi12345/youtubedl-material"  class="external-link" target="_blank" rel="noopener">YoutubeDL-Material</a>: Worked well but slowly abandoned due to lack of updates</li>
+<li><a href="https://lidarr.audio"  class="external-link" target="_blank" rel="noopener">lidarr</a>: Music Collection Manager, just didnt use this functionality</li>
+<li><a href="https://bitwarden.com/help/install-on-premise-linux/"  class="external-link" target="_blank" rel="noopener">Bitwarden On-Prem</a>: Migrated to Bitwarden Cloud, didnt see the ROI in self-hosting</li>
+<li><a href="https://pi-hole.net"  class="external-link" target="_blank" rel="noopener">Pi-Hole</a>: worked well for add blocking just got frustating with some google search results for family. Ultimately i wanted more control so moved to Technitium</li>
+<li><a href="https://about.gitlab.com/platform/"  class="external-link" target="_blank" rel="noopener">GitLab</a>: Waaay overkill for what i needed in a git hosting solution. Used a ton of memory as well.</li>
+<li><a href="https://wallabag.org/"  class="external-link" target="_blank" rel="noopener">Wallabag</a>: didn&rsquo;t love the interface may come back and try it again at some point</li>
+<li><a href="https://portainer.io"  class="external-link" target="_blank" rel="noopener">Portainer</a>: used for a long time but i don&rsquo;t like how it hit the stack file locations and didnt track changes as well. Moved to <a href="https://komo.do/"  class="external-link" target="_blank" rel="noopener">Komodo</a>.</li>
+</ul>
+<h2 id="app-investigation-backlog">
+  App Investigation Backlog
+  <a class="heading-link" href="#app-investigation-backlog">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="andrew-amasontech">
+  Andrew Amason.tech
+  <a class="heading-link" href="#andrew-amasontech">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://gohugo.io/"  class="external-link" target="_blank" rel="noopener">hugo</a>: Static Websites based on markdown. will likely build andrewamason.tech on this</li>
+<li><a href="https://linkstack.org/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">LinkStack</a></li>
+<li><a href="https://sink.cool/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Sink</a></li>
+</ul>
+<h3 id="techy">
+  Techy
+  <a class="heading-link" href="#techy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://homebox.software/en/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">HomeBox</a></li>
+<li><a href="https://www.haptic.md/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Haptic</a></li>
+<li><a href="https://web-check.xyz/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Web Check</a></li>
+<li><a href="https://github.com/Yooooomi/your_spotify?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Your Spotify</a></li>
+<li><a href="https://getdashdot.com/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Dash</a></li>
+<li><a href="https://petio.tv/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Petio</a></li>
+<li><a href="https://docs.adminerevo.org/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Adminer Evo</a></li>
+<li><a href="https://www.solidtime.io/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Solid Time</a></li>
+<li><a href="https://cal.com/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Cal.com</a></li>
+<li><a href="https://dillinger.io/"  class="external-link" target="_blank" rel="noopener">Dillinger</a></li>
+<li><a href="https://airtrail.johan.ohly.dk/docs/overview/introduction"  class="external-link" target="_blank" rel="noopener">AirTrail</a></li>
+</ul>
+<h3 id="home-improvement">
+  Home Improvement
+  <a class="heading-link" href="#home-improvement">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://docs.mealie.io/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Mealie</a></li>
+<li><a href="https://manyfold.app/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Manyfold</a></li>
+<li><a href="https://github.com/Wingysam/Christmas-Community?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Community Christmas</a></li>
+<li><a href="https://docs.tandoor.dev/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Tandoor</a></li>
+<li><a href="https://grocy.info/?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">Grocy</a></li>
+<li><a href="https://github.com/tech-kev/SharedMoments?ref=selfh.st"  class="external-link" target="_blank" rel="noopener">SharedMoments</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Andrew Amason 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
