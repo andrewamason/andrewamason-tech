@@ -1,19 +1,19 @@
 +++
-authors = [“Lone Coder”]
-title = “Diving Into the HomeLab”
-date = “2024-12-30”
-description = “Guide to emoji usage in Hugo”
+authors = ["Lone Coder"]
+title = "My HomeLab"
+date = "2024-12-31"
+description = "Guide to emoji usage in Hugo"
 tags = [
-    “hugo”,
-    “markdown”,
-    “emoji”,
+    "Homelab",
+    "markdown"
 ]
 categories = [
-    “syntax”,
-    “theme demo”,
+    "syntax",
+    "theme demo",
 ]
-series = [“Theme Demo”]
+series = ["Theme Demo"]
 +++
+
 # My HomeLab
 
 ## Servers & Hardware
