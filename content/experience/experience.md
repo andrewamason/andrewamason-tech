@@ -1,10 +1,21 @@
 +++
+authors = ["Andrew Amason"]
 title = "Experience"
-slug = "experience"
+date = "2023-07-07"
+description = "Guide to emoji usage in Hugo"
+tags = [
+    "hugo",
+    "markdown",
+    "emoji",
+]
+categories = [
+    "syntax"
+]
+series = ["Job_Experience"]
 +++
 
+
 ---
-draft: false
 title: " Senior Systems Engineer - Memorial Health University Medical Center"
 jobTitle: "Systems Engineer"
 company: "Memorial Health University Medical Center"
