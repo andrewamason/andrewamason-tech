@@ -1,7 +1,7 @@
 +++
 authors = ["Andrew Amason"]
 title = "My HomeLab"
-date = "2024-12-31"
+date = "2025-03-05"
 description = "A Guide to my HomeLab environment and the apps that I use every day."
 tags = [
     "Homelab",
@@ -23,35 +23,25 @@ series = ["SelfHosting"]
   - CPU: **INTEL Celeron J3455**
   - RAM: **16 GB**
   - Total Storage: **24.9 TB**
-- QNAP [TVS-463](https://www.qnap.com/en-us/product/tvs-463)
-  - Name: **Snarl**
-  - CPU: **AMD GX-424CC with Radeon R5E**
-  - RAM: **8 GB**
-  - Total Storage: **6.27 TB**
-- HP ProDesk 600 G3 Mini - OS: VMware ESX 7
-  - Name: **Nova**
-  - CPU: **Intel(R) Core(TM) i5-7500T**
-  - RAM: **16 GB**
-  - VMs:
-    - **BlueStreak**
-      - OS: Rocky Linux 9.5
-- Dell Optiplex 9020
-  - OS: Rocky Linux 9.5
-  - Name: **Trailbreaker**
-  - CPU: **Intel(R) Core(TM) i5-4570**
-  - RAM: **24 GB**
+- ASUS RS720 - Unraid 7
+  - Name: **CyberTron**
+  - CPU: **2x Intel Xeon E5-2620 v4**
+  - RAM: **256 GB**
+  - Total Storage: **55.5 TB**
+
+As a techy i really like to play around with many different services and see how they work and interact, nearly all of these services are containerize services running on my CyberTron, Unraid server with the SWAG reverse proxy what's really nice is that the only port ever exposed on the server for these services is HTTPS/443. Some of my most used services are listed below:
 
 ## Infrastructure Containers
 
 - [Technitium](https://technitium.com/dns/): Serves internal Split scope DNS, 2x of these containers using a single git repo with 2 different .env files
-- [SWAG](https://docs.linuxserver.io/general/swag/): Internal Reverse Proxy
-- [Traefik](https://traefik.io/traefik/): external reverse proxy
+- [SWAG](https://docs.linuxserver.io/general/swag/): Internal Reverse Proxy hosting ZeroSSL Wildcard Certificate.
+- [Traefik](https://traefik.io/traefik/): external reverse proxy utilizing Lets Encrypt individual Certificates.
 - [Cloudflare-DDNS](https://hub.docker.com/r/oznu/cloudflare-ddns/): DDNS Updating Container
 - [flaresolverr](https://github.com/FlareSolverr/FlareSolverr): solves cloudflare prompts
 - [Komodo](https://komo.do/): Docker Stack Management, all stacks are git repos on gitea that deploy on gitea webhooks
 - [Gitea](https://about.gitea.com/): OpenSource lightweight git hosting
 
-## Apps
+## App Containers
 
 ### Watching, Reading, & Listening
 
@@ -60,17 +50,19 @@ series = ["SelfHosting"]
 - [FreshRSS](https://freshrss.org/): RSS Aggregation
 - [Hoarder](https://hoarder.app/): Bookmarks & Links Storing
 - [Glance](https://github.com/glanceapp/glance): News Dashboard
+- [Romm](https://romm.app/?ref=selfh.st) - Roms Manager & Web Based Roms
 
 ### Dashboards & Monitoring
 
 - [Homarr](https://homarr.dev/): Internal Dashboard in competition with Heimdall will eventually consolidate to one or the other
-- [Heimdall](https://heimdall.site/): IInternal Dashboard in competition with Homarr will eventually consolidate to one or the other
+- [Heimdall](https://heimdall.site/): Internal Dashboard in competition with Homarr will eventually consolidate to one or the other
 - [Tautulli](https://tautulli.com/): Plex Monitoring
 
 ### Tech Support
 
 - [KASM Workspace](https://kasmweb.com/): Ephemeral Workspaces & Investigations
 - [RustDesk](https://rustdesk.com/): Desktop Remote Support
+- [ntfy.sh](https://ntfy.sh/) / [apprise](https://hub.docker.com/r/caronc/apprise) / [notifiarr](https://notifiarr.com/?ref=selfh.st) : selfhosted Notifications Service
 
 ### SmartHome
 
@@ -78,24 +70,11 @@ series = ["SelfHosting"]
   
 ### Media Download & Management Apps
 
-- [Prowlarr](https://prowlarr.com/): Centralized Index management
-- [Overseerr](https://overseerr.dev/): Nice front end for Sonarr/Radarr
-- [Sonarr](https://sonarr.tv/): TV Show Collection Manager
-- [Radarr](https://radarr.video/): Movie Collection Manager
-- [Readarr](https://readarr.com/): ebook Collection Manager
-- [qBitTorrent](https://www.qbittorrent.org/): For downloading & seeding Linux Distros (obviously)
-- [Metube](https://github.com/alexta69/metube): Youtube Video downloader (good for single video downloads or one off playlist downloads probably going to retire)
-- [Pinchflat](https://github.com/kieraneglin/pinchflat): Youtube download tracker (alot more full featured than MeTube)
 - [Tdarr](https://home.tdarr.io/): Distributed Media Transcoding, tracks library and follows designated "flows"
 - [Immich](https://immich.app): Photo Management App "Selfhosted Google photos"
-  - [Immich Frame](https://github.com/immichFrame/ImmichFrame) Picture Frame App for Immich
+  - [Immich Frame](https://github.com/immichFrame/ImmichFrame) Picture Frame App for Immich, i run the GoogleTV app on my living room tv which connects to this service.
   
 ## Apps In Testing
-
-- [ntfy.sh](https://ntfy.sh/) / [apprise](https://hub.docker.com/r/caronc/apprise) / [notifiarr](https://notifiarr.com/?ref=selfh.st) : selfhosted Notifications Service
-- [Romm](https://romm.app/?ref=selfh.st) - Roms Manager
-
-## Apps to Implement/Test Soon
 
 - [ChangeDetection.io](https://changedetection.io): Self-Hosted WEBSITE CHANGE DETECTION
 - [CrowdSec Blocklists](https://www.crowdsec.net/): Customized IP Blocklists
@@ -116,12 +95,6 @@ Great source of additional applications can be found here: <https://selfh.st/>
   
 ## App Investigation Backlog
 
-### Andrew Amason.tech
-
-- [hugo](https://gohugo.io/): Static Websites based on markdown. will likely build andrewamason.tech on this
-- [LinkStack](https://linkstack.org/?ref=selfh.st)
-- [Sink](https://sink.cool/?ref=selfh.st)
-
 ### Techy
 
 - [HomeBox](https://homebox.software/en/?ref=selfh.st)
@@ -135,6 +108,8 @@ Great source of additional applications can be found here: <https://selfh.st/>
 - [Cal.com](https://cal.com/?ref=selfh.st)
 - [Dillinger](https://dillinger.io/)
 - [AirTrail](https://airtrail.johan.ohly.dk/docs/overview/introduction)
+- [LinkStack](https://linkstack.org/?ref=selfh.st)
+- [Sink](https://sink.cool/?ref=selfh.st)
 
 ### Home Improvement
 
