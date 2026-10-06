@@ -1,25 +1,28 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+description = "About Andrew Amason"
+aliases = ["about-us", "contact"]
+author = "Andrew Amason"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I'm Andrew Amason, a Senior Manager of IT Infrastructure who has spent more than a decade building, running, and improving enterprise server environments.
 
-Hugo makes use of a variety of open source projects including:
+## Background
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+My career started in hands-on systems engineering. I interned with The Home Depot's Virtual Desktop Infrastructure team, then spent several years as a Systems Engineer and Senior Systems Engineer at Memorial Health University Medical Center, providing Tier 3 support across the server estate and serving as Office 365 administrator. Today I lead infrastructure teams and focus on reliable, secure, and well-documented systems.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+## Areas of Focus
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+- Infrastructure strategy and team leadership
+- Server, virtualization, and storage platforms
+- Microsoft 365 and identity
+- Networking, DNS, and reverse proxy design
+- Containers, automation, and self-hosting
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+## Outside of Work
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+I run a homelab where I test new tools before they ever reach production — you can read about it on the [blog](/posts/).
+
+## Get in Touch
+
+The best way to reach me is on [LinkedIn](https://www.linkedin.com/in/andrewamason/). My full work history is on my [résumé](https://resume.andrewamason.tech).
