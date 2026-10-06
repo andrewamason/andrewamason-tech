@@ -1,5 +1,5 @@
-baseURL = "http://www.andrewamason.tech"
-title = "andrewamason"
+baseURL = "https://andrewamason.tech/"
+title = "Andrew Amason"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -19,9 +19,9 @@ noClasses = false
 [params]
 author = "Andrew Amason"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "Andrew Amason's personal website"
-keywords = "blog,developer,personal"
-info = ["Sr Manager - IT Infrastructure", "Tech Enthusiast"]
+description = "Andrew Amason — Senior Manager of IT Infrastructure. Notes on infrastructure, leadership, and homelab projects."
+keywords = "Andrew Amason,IT infrastructure,systems engineering,homelab,self-hosting"
+info = ["Senior Manager, IT Infrastructure", "Systems · Automation · Homelab"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -137,27 +137,27 @@ tag = "tags"
 author = "authors"
 
 [[params.social]]
-name = "Github"
+name = "GitHub"
 icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/andrewamason/"
 
 [[params.social]]
-name = "Twitter"
+name = "Facebook"
 icon = "fa-brands fa-facebook fa-2x"
 weight = 3
 url = "https://facebook.com/andrewamason/"
 
 [[params.social]]
-name = "Twitter"
+name = "X"
 icon = "fa-brands fa-x-twitter fa-2x"
-weight = 3
+weight = 4
 url = "https://twitter.com/andrewamason/"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
-weight = 4
+weight = 2
 url = "https://www.linkedin.com/in/andrewamason/"
 
 [[params.social]]
@@ -169,7 +169,7 @@ rel = "alternate"
 type = "application/rss+xml"
 
 [languages.en]
-languageName = ":uk:"
+languageName = "English"
 
 [[languages.en.menu.main]]
 name = "About"
@@ -181,17 +181,8 @@ name = "Blog"
 weight = 2
 url = "posts/"
 
-#[[languages.en.menu.main]]
-#name = "Projects"
-#weight = 3
-#url = "projects/"
 
 [[languages.en.menu.main]]
-name = "Experience"
+name = "Résumé"
 weight = 3
 url = "https://resume.andrewamason.tech"
-
-#[[languages.en.menu.main]]
-#name = "Contact me"
-#weight = 5
-#url = "contact/"

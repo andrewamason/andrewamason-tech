@@ -14,8 +14,6 @@ categories = [
 series = ["SelfHosting"]
 +++
 
-## My HomeLab
-
 ## Servers & Hardware
 
 - Synology [DS918+](https://global.download.synology.com/download/Document/Hardware/DataSheet/DiskStation/18-year/DS918+/enu/Synology_DS918_Plus_Data_Sheet_enu.pdf) & [DS517](https://www.synology.com/en-us/products/DX517#features) Expansion Bay
@@ -29,70 +27,70 @@ series = ["SelfHosting"]
   - RAM: **256 GB**
   - Total Storage: **55.5 TB**
 
-As a techy i really like to play around with many different services and see how they work and interact, nearly all of these services are containerize services running on my CyberTron, Unraid server with the SWAG reverse proxy what's really nice is that the only port ever exposed on the server for these services is HTTPS/443. Some of my most used services are listed below:
+I enjoy experimenting with different services to see how they work and interact. Nearly all of them run as containers on CyberTron, my Unraid server, behind the SWAG reverse proxy — so the only port ever exposed for these services is HTTPS/443. Some of my most used services are listed below:
 
 ## Infrastructure Containers
 
-- [Technitium](https://technitium.com/dns/): Serves internal Split scope DNS, 2x of these containers using a single git repo with 2 different .env files
-- [SWAG](https://docs.linuxserver.io/general/swag/): Internal Reverse Proxy hosting ZeroSSL Wildcard Certificate.
-- [Traefik](https://traefik.io/traefik/): external reverse proxy utilizing Lets Encrypt individual Certificates.
-- [Cloudflare-DDNS](https://hub.docker.com/r/oznu/cloudflare-ddns/): DDNS Updating Container
-- [flaresolverr](https://github.com/FlareSolverr/FlareSolverr): solves cloudflare prompts
-- [Komodo](https://komo.do/): Docker Stack Management, all stacks are git repos on gitea that deploy on gitea webhooks
-- [Gitea](https://about.gitea.com/): OpenSource lightweight git hosting
+- [Technitium](https://technitium.com/dns/): Serves internal split-scope DNS; two of these containers run using a single git repo with 2 different .env files
+- [SWAG](https://docs.linuxserver.io/general/swag/): Internal reverse proxy hosting a ZeroSSL wildcard certificate.
+- [Traefik](https://traefik.io/traefik/): External reverse proxy using individual Let's Encrypt certificates.
+- [Cloudflare-DDNS](https://hub.docker.com/r/oznu/cloudflare-ddns/): Dynamic DNS updater
+- [flaresolverr](https://github.com/FlareSolverr/FlareSolverr): Solves Cloudflare challenges
+- [Komodo](https://komo.do/): Docker stack management; every stack is a Git repo on Gitea that deploys via webhook
+- [Gitea](https://about.gitea.com/): Open-source, lightweight Git hosting
 
 ## App Containers
 
 ### Watching, Reading, & Listening
 
-- [Plex](https://www.plex.tv/): Video Streaming
-- [Audiobookshelf](https://www.audiobookshelf.org/): Podcasts & Audiobooks
-- [FreshRSS](https://freshrss.org/): RSS Aggregation
-- [Hoarder](https://hoarder.app/): Bookmarks & Links Storing
-- [Glance](https://github.com/glanceapp/glance): News Dashboard
-- [Romm](https://romm.app/?ref=selfh.st) - Roms Manager & Web Based Roms
+- [Plex](https://www.plex.tv/): Video streaming
+- [Audiobookshelf](https://www.audiobookshelf.org/): Podcasts and audiobooks
+- [FreshRSS](https://freshrss.org/): RSS aggregation
+- [Hoarder](https://hoarder.app/): Bookmark and link storage
+- [Glance](https://github.com/glanceapp/glance): News dashboard
+- [RomM](https://romm.app/?ref=selfh.st): ROM manager and web-based player
 
 ### Dashboards & Monitoring
 
-- [Homarr](https://homarr.dev/): Internal Dashboard in competition with Heimdall will eventually consolidate to one or the other
-- [Heimdall](https://heimdall.site/): Internal Dashboard in competition with Homarr will eventually consolidate to one or the other
-- [Tautulli](https://tautulli.com/): Plex Monitoring
+- [Homarr](https://homarr.dev/): Internal dashboard (evaluating against Heimdall; I'll eventually consolidate to one)
+- [Heimdall](https://heimdall.site/): Internal dashboard (evaluating against Homarr)
+- [Tautulli](https://tautulli.com/): Plex monitoring
 
 ### Tech Support
 
-- [KASM Workspace](https://kasmweb.com/): Ephemeral Workspaces & Investigations
-- [RustDesk](https://rustdesk.com/): Desktop Remote Support
-- [ntfy.sh](https://ntfy.sh/) / [apprise](https://hub.docker.com/r/caronc/apprise) / [notifiarr](https://notifiarr.com/?ref=selfh.st) : selfhosted Notifications Service
+- [KASM Workspace](https://kasmweb.com/): Ephemeral workspaces for investigations
+- [RustDesk](https://rustdesk.com/): Remote desktop support
+- [ntfy.sh](https://ntfy.sh/) / [apprise](https://hub.docker.com/r/caronc/apprise) / [notifiarr](https://notifiarr.com/?ref=selfh.st) : Self-hosted notification services
 
 ### SmartHome
 
-- [HomeAssistant](https://www.home-assistant.io/): Smart Home Hub
-  
+- [HomeAssistant](https://www.home-assistant.io/): Smart home hub
+
 ### Media Download & Management Apps
 
-- [Tdarr](https://home.tdarr.io/): Distributed Media Transcoding, tracks library and follows designated "flows"
-- [Immich](https://immich.app): Photo Management App "Selfhosted Google photos"
-  - [Immich Frame](https://github.com/immichFrame/ImmichFrame) Picture Frame App for Immich, i run the GoogleTV app on my living room tv which connects to this service.
-  
+- [Tdarr](https://home.tdarr.io/): Distributed media transcoding that tracks the library and follows defined "flows"
+- [Immich](https://immich.app): Photo management — a self-hosted Google Photos
+  - [Immich Frame](https://github.com/immichFrame/ImmichFrame) Picture-frame app for Immich; I run the Google TV app on my living room tv which connects to this service.
+
 ## Apps In Testing
 
-- [ChangeDetection.io](https://changedetection.io): Self-Hosted WEBSITE CHANGE DETECTION
-- [CrowdSec Blocklists](https://www.crowdsec.net/): Customized IP Blocklists
-- [Wazuh XDR](https://wazuh.com/): Self-Hosted Unified XDR and SIEM protection for endpoints
-- [authentik](https://goauthentik.io/): IDP
+- [ChangeDetection.io](https://changedetection.io): Self-hosted website change detection
+- [CrowdSec Blocklists](https://www.crowdsec.net/): Customized IP blocklists
+- [Wazuh XDR](https://wazuh.com/): Self-hosted XDR and SIEM for endpoints
+- [authentik](https://goauthentik.io/): Identity provider (SSO)
 
-Great source of additional applications can be found here: <https://selfh.st/>
+A great source for discovering more self-hosted apps: <https://selfh.st/>
 
 ## Apps Retired
 
-- [YoutubeDL-Material](https://hub.docker.com/r/tzahi12345/youtubedl-material): Worked well but slowly abandoned due to lack of updates
-- [lidarr](https://lidarr.audio): Music Collection Manager, just didnt use this functionality
-- [Bitwarden On-Prem](https://bitwarden.com/help/install-on-premise-linux/): Migrated to Bitwarden Cloud, didnt see the ROI in self-hosting
-- [Pi-Hole](https://pi-hole.net): worked well for add blocking just got frustating with some google search results for family. Ultimately i wanted more control so moved to Technitium
-- [GitLab](https://about.gitlab.com/platform/): Waaay overkill for what i needed in a git hosting solution. Used a ton of memory as well.
-- [Wallabag](https://wallabag.org/): didn't love the interface may come back and try it again at some point
-- [Portainer](https://portainer.io): used for a long time but i don't like how it hit the stack file locations and didnt track changes as well. Moved to [Komodo](https://komo.do/).
-  
+- [YoutubeDL-Material](https://hub.docker.com/r/tzahi12345/youtubedl-material): Worked well, but I moved on as updates slowed
+- [lidarr](https://lidarr.audio): Music collection manager; I just didn't use it
+- [Bitwarden On-Prem](https://bitwarden.com/help/install-on-premise-linux/): Migrated to Bitwarden Cloud; self-hosting wasn't worth the effort
+- [Pi-Hole](https://pi-hole.net): Worked well for ad blocking but caused frustrating Google search issues for the family. I wanted more control, so I moved to Technitium.
+- [GitLab](https://about.gitlab.com/platform/): Far more than I needed for Git hosting, and very memory-hungry.
+- [Wallabag](https://wallabag.org/): Didn't love the interface; may revisit it later
+- [Portainer](https://portainer.io): Used it for a long time, but disliked how it handled stack file locations and change tracking. Moved to [Komodo](https://komo.do/).
+
 ## App Investigation Backlog
 
 ### Techy
